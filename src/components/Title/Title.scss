@@ -1,0 +1,7 @@
+@use "../../style/variables" as *;
+
+.title {
+  font-family: 'golos-bold';
+  color: $grey;
+  font-size: 32px;
+}

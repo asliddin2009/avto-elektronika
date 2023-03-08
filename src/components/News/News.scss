@@ -1,0 +1,61 @@
+@use "../../style/variables" as *;
+
+.news {
+
+  &Swiper {
+    &__wrapper {
+      overflow: initial;
+    }
+  }
+
+  &__link {
+    color: $orange;
+    padding: 8px 14.5px;
+    border: 2px solid $orange;
+    border-radius: 12px;
+    font-family: "golos-demibold";
+    font-size: 18px;
+    transition: .5s;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+      transition: .5s;
+    }
+
+    &:hover .newsIcon path {
+      stroke: $white;
+      transition: .5s;
+    }
+  }
+
+  &Icon {
+    transition: .5s;
+  }
+}
+
+.mySwipers .swiper-button-prev {
+  top: 125px;
+}
+.mySwipers .swiper-button-next {
+  top: 125px;
+}
+
+.mySwipers .swiper-button-prev:hover 
+.swiper-button-prev::after {
+  content: url(../../images/swiperNextHover.svg);
+}
+.mySwipers .swiper-button-next:hover 
+.swiper-button-next::after {
+  content: url(../../images/swiperNextHover.svg);
+}
+
+.mySwipers .swiper-pagination {
+  position: static;
+  margin-top: 10px;
+}
+
+.mySwiper .swiper-pagination {
+  position: static;
+  margin-top: 10px;
+}

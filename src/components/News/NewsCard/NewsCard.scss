@@ -1,0 +1,47 @@
+@use '../../../style/variables' as *;
+
+.newsCard {
+  gap: 30px;
+
+  &__title {
+    color: $grey;
+    font-family: 'golos-bold';
+    font-size: 28px;
+    line-height: 32px;
+    transition: .5s;
+
+    &:hover {
+      color: $orange;
+      transition: .5s;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    & span {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: $white;
+      padding: 7px 16px;
+      background-color: $orange;
+      border-radius: 8px;
+      font-family: 'golos-regular';
+      font-size: 14px;
+    }
+  }
+}
+
+.swiper-slide {
+  gap: 30px;
+}
+
+.newsCard__date p {
+  color: $lightGrey;
+  font-size: 12px;
+}
+
+.newsCard__date svg {
+  font-size: 12px;
+}

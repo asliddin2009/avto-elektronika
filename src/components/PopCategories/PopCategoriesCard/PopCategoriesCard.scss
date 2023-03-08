@@ -1,0 +1,36 @@
+@use '../../../style/variables' as *;
+
+.PopCategoriesCard {
+  width: 200px;
+  height: 200px;
+  background-color: #F1F1F1;
+  border-radius: 20px;
+  // padding: 24px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &:hover &__title{
+    color: $orange;
+    transition: .3s;
+  }
+
+  &__title {
+    color: $darkGrey;
+    font-family: "golos-bold";
+    text-align: center;
+    font-size: 18px;
+    transition: .3s;
+
+    &-wrapper {
+      height: 50%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    margin-top: 24px;
+    height: 50%;
+  }
+}

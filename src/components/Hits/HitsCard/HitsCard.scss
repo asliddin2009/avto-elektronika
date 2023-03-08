@@ -1,0 +1,94 @@
+@use "../../../style/variables" as *;
+
+.hitsCard {
+  width: 210px;
+  position: relative;
+
+  &__seil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $white;
+    background-color: #FF0000;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+
+  &__price {
+    display: flex;
+    & span {
+      color: $black;
+      font-family: "golos-bold";
+      font-size: 23px;
+      line-height: 35px;
+      padding-right: 5px;
+    }
+
+    & del {
+      color: $lightGrey;
+      font-size: 15px;
+    }
+  }
+
+  &__text {
+    color: $grey;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__num {
+    font-size: 14px;
+
+    & span {
+      font-size: 14px;
+      color: $darkGrey;
+      font-family: "golos-bold";
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: $orange;
+    border-radius: 12px;
+    height: 45px;
+    border: 2px solid $orange;
+    transition: .5s;
+
+    & span {
+      color: $white;
+      font-family: "golos-demibold";
+      font-size: 16px;
+    }
+
+    & svg {
+      fill: $orange;
+
+      & path {
+        stroke: $white;
+      }
+    }
+
+    &:hover {
+      background-color: $white;
+      transition: .5s;
+      border: 2px solid $orange;
+
+      & span {
+        color: $orange;
+      }
+
+      & svg {
+        fill: $white;
+
+        & path {
+          stroke: $orange;
+        }
+      }
+    }
+  }
+}

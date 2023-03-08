@@ -1,0 +1,74 @@
+@use "../../style/variables" as *;
+
+.input {
+  background: #fde9de;
+  border-radius: 20px;
+  padding: 30px;
+
+  &__title {
+    color: $grey;
+    font-family: "golos-demibold";
+    padding-bottom: 15px;
+    font-style: 22px;
+  }
+
+  &__radio {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  & p {
+    color: $grey;
+    font-size: 12px;
+
+    & a {
+      color: $orange;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    & label {
+      color: $orange;
+      max-width: 160px;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    & input[type="radio"] {
+      appearance: none;
+      cursor: pointer;
+    }
+
+    input[type="radio"]:after {
+      content: url(../../images/inputIcon2.svg);
+    }
+
+    input[type="radio"]:checked:after {
+      content: url(../../images/inputIcon.svg); 
+    }
+
+    & input[type="text"] {
+      max-width: 500px;
+      width: 100%;
+      padding: 16px 12px;
+      background: #ffffff;
+      border: 1px solid #a0a3bc;
+      border-radius: 12px;
+      color: $lightGrey;
+      font-size: 16px;
+    }
+
+    & button {
+      background-color: $orange;
+      color: $white;
+      border-radius: 12px;
+      padding: 8px 34.5px;
+      font-size: 16px;
+      font-family: "golos-demibold";
+    }
+  }
+}

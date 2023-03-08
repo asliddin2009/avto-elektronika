@@ -1,0 +1,35 @@
+@use "../../style/variables" as *;
+
+.text {
+
+  & p {
+    color: $grey;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  &__icon {
+    transform: rotate(180deg);
+    margin-top: 3px;
+  }
+
+  &__bg {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 68.51%);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+  }
+
+  &__btn {
+
+    & span,
+    svg {
+      font-family: "golos-medium";
+      font-size: 14px;
+      color: $grey;
+      text-align: center;
+    }
+  }
+}

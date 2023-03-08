@@ -1,0 +1,123 @@
+@use "../../style/variables" as *;
+
+.search {
+  position: relative;
+
+  & input {
+    border: 1px solid $lightGrey;
+    height: 50px;
+    border-radius: 12px;
+    padding: 12px;
+    color: $grey;
+  }
+}
+
+.icon svg {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.navbar__link {
+  border-radius: 12px;
+  padding: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+
+  & p {
+    color: $grey;
+  }
+
+  & svg {
+    fill: $white;
+    transition: .5s;
+  }
+
+  &:hover p {
+    transition: 0.5s;
+    color: $orange;
+  }
+
+  &:hover svg path {
+    transition: 0.5s;
+    stroke: $orange;
+  }
+}
+
+.menu {
+  &__item {
+    display: flex;
+    color: $lightGrey;
+    padding: 8px 12.5px;
+    background-color: #f1f1f1;
+    font-family: "golos-bold";
+    font-size: 13px;
+    border-radius: 40px;
+  }
+
+  &__list {
+    .list-item {
+      font-family: "golos-bold";
+      color: $grey;
+      font-size: 15px;
+    }
+  }
+
+  .lang {
+    & select {
+      color: $grey;
+      font-family: "golos-demibold";
+      font-size: 15px;
+      display: block;
+      height: 25px;
+      width: 50px;
+      padding-left: 5px;
+      appearance: none;
+      border: none;
+
+      & option {
+        color: white;
+        &:active {
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+.dropDown {
+  margin-left: -22px;
+}
+
+.tels {
+  & a {
+    color: $orange;
+    font-family: "golos-demibold";
+    font-size: 16px;
+  }
+}
+
+.call {
+  background: $orange;
+  border-radius: 8px;
+  padding: 7px 12px;
+  border: 2px solid $orange;
+  transition: 0.5s;
+
+  & span,
+  svg {
+    color: $white;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    background-color: $white;
+    border: 2px solid $orange;
+
+    & span,
+    svg {
+      color: $orange;
+    }
+  }
+}

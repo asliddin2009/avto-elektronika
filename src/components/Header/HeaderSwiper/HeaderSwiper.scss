@@ -1,0 +1,52 @@
+@use "../../../style/variables" as *;
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-prev::after{
+  content: url(../../../images/swiperPrev.svg);
+}
+.swiper-button-next::after{
+  content: url(../../../images/swiperNext.svg);
+}
+
+.swiper-pagination-bullet-active {
+  width: 22px;
+  height: 8px;
+  border-radius: 4px;
+  background: $orange;
+}
+
+.swiper-button-prev {
+  margin-left: 20px;
+}
+
+.swiper-button-next {
+  margin-right: 20px;
+}

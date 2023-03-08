@@ -1,0 +1,23 @@
+@use "../../../style/variables" as *;
+
+.autopartsCard {
+  background-color: rgb(241,	241, 241);
+  border-radius: 20px;
+  height: 200px;
+  width: 170px;
+  position: relative;
+
+  &__title {
+    text-align: center;
+    margin-top: -45px;
+    font-family: "golos-bold";
+    color: $grey;
+    font-size: 18px;
+    transition: .5s;
+  }
+
+  &:hover &__title {
+    color: $orange;
+    transition: .5s;
+  }
+}
